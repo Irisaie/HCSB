@@ -1,0 +1,401 @@
+
+$fontTitle :        'Monserrat', sans-serif;
+$fontContent :      'Open Sans', sans-serif;
+
+//Colors
+
+$black :            #1f2c34;
+$red :              #e96b55;
+$green :            #5eab99;
+$yellow:            #f0f193;
+$brown:             #cac1bd;
+$grey:              #595959;
+$footer:            #2e4047;
+
+//Buttons
+
+$myBtnBkg:          transparent;
+$myBtnBorder:       2px solid $red;
+$myBtnRaduis:       25px;
+$myBtnFontColor:    $red;
+$myBtnFontWeight:   600;
+
+//Basic setting
+
+body, html{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: $fontContent;
+    color: $grey;
+    position: relative;
+    width: auto;
+    h1, h2 {
+        text-transform: uppercase;
+        color: $black;
+        font-family: $fontTitle;
+        font-weight: 700;
+        border-left : 5px solid $green;
+        padding-left: 5%;
+        margin-bottom:3%;
+    }
+    a{
+        color:$red;
+        &:hover{
+            color: $green;
+            text-decoration: none;
+        }
+    }
+    .btn-custom{
+        background: $myBtnBkg;
+        border: $myBtnBorder;
+        border-radius: $myBtnRaduis;
+        color: $myBtnFontColor;
+        font-weight: $myBtnFontWeight;
+        text-transform: uppercase;
+        &:hover{
+            border-color: $green;
+            color : $green;
+        }   
+    }
+    .container-fluid{
+        
+        padding: 0;
+        aside{
+            padding: 0;
+        }
+        article{
+           padding : 3% 2%;
+        }
+    }
+
+}
+
+//00.Header
+
+.Navi{
+    background: $black;
+    
+
+    .navbar-nav a.nav-link{
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 600;
+        &:hover{
+            color: $green;
+        }
+    }
+    .navbar-nav a.nav-link.active{
+        color: $green;
+    }
+}
+
+//01.Accueil
+
+.welcome {
+    aside{
+        background-size: 100% auto;
+        height: auto;  
+        min-height: 200px;
+    }
+    article{
+        background: $green;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        .date{ 
+            padding: 5% 0 7%;
+            span{
+                display: block;
+                font-family: 'Montserrat', sans-serif; 
+                font-weight: 700;
+                }
+            }
+            .textshadow{
+                font-size: 4rem;
+                text-shadow: 5px 0px 0px rgba(94, 171, 153, 1)
+            }
+            .btn-custom{
+                color: $yellow;
+                border-color: $yellow;
+                margin-top:5%;
+                &:hover{
+                    color: white;
+                    border-color: white;
+                }
+            }
+        
+    }
+}
+//02.A propos
+
+.about{
+    aside{
+        background-size: 100% auto;
+        height: auto;  
+        min-height: 200px;
+    }
+}
+
+//03.Actualité
+
+.news{
+    aside{
+        background-size: 100% auto;
+        height: auto;  
+        min-height: 200px;  
+    }
+}
+//04.Films
+
+.movie{
+    background: #f8d480;
+    background-size: 100% auto;
+    height: auto;  
+    min-height: 200px;
+    .row{
+        padding: 3% 2%;
+            }
+}
+//05.Réservation
+
+.booking{
+    aside{
+        background-size: 100% auto;
+        height: auto;  
+        min-height: 200px;
+    }
+}
+.form-group{
+    position: relative;
+}
+//06.Contact
+
+.contactPage .col-sm-12{
+    .cardForm{
+        margin-bottom: 3%;
+    }
+}
+.address{
+    h2{
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    .contactIcons{
+        display: inline-block;  
+    }
+    .banContact{
+        width: 100%;
+        height: 200px;
+        position: relative;
+        overflow: hidden;
+        
+        img{
+            width: 100%;
+            position: absolute;
+            top:-35%;
+        }
+    }
+}
+//07.Footer
+
+footer{
+    background: $footer;
+    color: white;
+    h2{
+        font-size: 1.5rem;
+    }
+    .footerLinks a{
+        display: block;
+        color: white;
+        &:hover{
+            color: $green;
+        }
+    }
+    .social{
+        .socialicons a{
+            color: white;
+            font-size:1.5rem;
+            line-height: 45px;
+            margin-right: 5%;
+            text-align: center;
+            display: inline-block;
+            width: 45px;
+            height: 45px;
+            background-color: $red;
+            border-radius:45px;
+            &:hover{
+                background-color: $green;
+            }
+   
+        }
+    }
+    .socketBkg{
+        background: $black;
+        width: 100%;
+        font-size:0.8rem;
+        p{
+            padding: 1% 0%;
+        }
+    }
+    h2{
+        color: white;
+       
+    }
+}
+
+//08. films.html
+
+.jumbotron {
+    background: $green;
+    span{
+        color: white;
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        font-size: xx-large;
+        font-weight: 700;
+    }
+}
+
+.container-fluid.filmlist{
+    padding-top: 3%;
+    width: 100%;
+    h3{
+        font-size: 1rem;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .note{
+        color:$red;
+        margin: 3% 0%;
+    }
+    span{
+        color:$green;
+        padding-right: 1%;
+    }  
+}
+.film01{
+    aside{
+        background: url("../Images/JW4.jpg") no-repeat top ;
+        background-size: 100% auto;
+        height: auto;  
+        min-height: 550px;
+    }
+}
+.film02{
+    aside{
+        background: url("../Images/SW3.jpg") no-repeat top ;
+        background-size: 100% auto;
+        height: auto;  
+        min-height: 550px;
+    }
+}
+.film03{
+    aside{
+        background: url("../Images/NCF.jpg") no-repeat top ;
+        background-size: 100% auto;
+        height: auto;  
+        min-height: 550px;
+    }
+}
+.film04{
+    aside{
+        background: url("../Images/LWS.jpg") no-repeat top ;
+        background-size: 100% auto;
+        height: auto;  
+        min-height: 550px;
+    }
+}
+.film05{
+    aside{
+        background: url("../Images/SI.jpg") no-repeat top ;
+        background-size: 100% auto;
+        height: auto;  
+        min-height: 550px;
+    }
+}
+.film06{
+    aside{
+        background: url("../Images/LAC.jpg") no-repeat top ;
+        background-size: 100% auto;
+        height: auto;  
+        min-height: 550px;
+    }
+}
+.film07{
+    aside{
+        background: url("../Images/TUS.jpg") no-repeat top ;
+        background-size: 100% auto;
+        height: auto;  
+        min-height: 550px;
+    }
+}
+.film08{
+    aside{
+        background: url("../Images/SIC.jpg") no-repeat top ;
+        background-size: 100% auto;
+        height: auto;  
+        min-height: 550px;
+    }
+}
+.film09{
+    aside{
+        background: url("../Images/PRS.jpg") no-repeat top ;
+        background-size: 100% auto;
+        height: auto;  
+        min-height: 550px;
+    }
+}
+.film10{
+    aside{
+        background: url("..//Images/ED.jpg") no-repeat top ;
+        background-size: 100% auto;
+        height: auto;  
+        min-height: 550px;
+    }
+}
+.film11{
+    aside{
+        background: url("../Images/TC.jpg") no-repeat top ;
+        background-size: 100% auto;
+        height: auto;  
+        min-height: 550px;
+    }
+}
+.film12{
+    aside{
+        background: url("../Images/AN.jpg") no-repeat top ;
+        background-size: 100% auto;
+        height: auto;  
+        min-height: 500px;
+    }
+}
+
+// 09. Blog
+
+.infoBlog{
+    color: lightgrey;
+    font-size: x-small;
+}
+.card-title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+//10. Article
+
+.article{
+    .firstImg{
+        position: relative;
+        overflow: hidden;
+        width:100%;  
+        height: 250px;
+        img{
+            position: absolute;
+        }
+    }
+    .infoBlog{
+        font-size : 1rem;
+    }
+}
